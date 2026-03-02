@@ -70,7 +70,3 @@ src/
 ├── routes/          # Router configuration
 └── theme/           # MUI theme customization
 ```
-
-## License
-
-Private – Maxsoft
