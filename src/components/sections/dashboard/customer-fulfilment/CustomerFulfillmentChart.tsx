@@ -96,7 +96,7 @@ const CustomerFulfillmentChart = ({
           emphasis: {
             focus: 'series',
           },
-          data: data['This Month'],
+          data: data?.['This Month'] ?? [],
         },
         {
           id: 2,
@@ -125,7 +125,7 @@ const CustomerFulfillmentChart = ({
           emphasis: {
             focus: 'series',
           },
-          data: data['Last Month'],
+          data: data?.['Last Month'] ?? [],
         },
       ],
     }),

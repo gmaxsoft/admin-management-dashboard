@@ -5,6 +5,7 @@ import {
   DataGrid,
   GridSlots,
   GridColDef,
+  GridValidRowModel,
   useGridApiRef,
   GridActionsCellItem,
   GridRenderCellParams,
@@ -161,7 +162,7 @@ const CustomerTable = ({ searchText }: { searchText: string }): ReactElement => 
       <DataGrid
         apiRef={apiRef}
         density="standard"
-        columns={visibleColumns}
+        columns={visibleColumns as GridColDef<GridValidRowModel>[]}
         autoHeight={false}
         rowHeight={56}
         checkboxSelection

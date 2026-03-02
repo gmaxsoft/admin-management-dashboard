@@ -1,6 +1,4 @@
-import { ShapeOptions } from '@mui/system/createTheme/shape';
-
-const shape: ShapeOptions = {
+const shape = {
   borderRadius: 4,
 };
 
